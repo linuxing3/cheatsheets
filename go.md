@@ -136,6 +136,12 @@ func getPointer () (myPointer *int) {
 ```
 {: data-line="3"}
 
+```go
+a := new(int)
+*a = 234
+```
+{: data-line="2"}
+
 Pointers point to a memory location of a variable. Go is fully garbage-collected.
 
 See: [Pointers](https://tour.golang.org/moretypes/1)
@@ -541,7 +547,7 @@ func (v Vertex) Abs() float64 {
 {: data-line="1"}
 
 ```go
-v: = Vertex{1, 2}
+v := Vertex{1, 2}
 v.Abs()
 ```
 
